@@ -1,0 +1,209 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#0cebeb,#20e3b2,#29ffc6) no-repeat center center fixed;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.nav-link{
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: hotpink ;
+}
+
+.form-control {
+    width: 8rem;
+    font-size: 1rem;
+    height: 2rem;
+}
+#lupa{
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+}
+
+.slider {
+    display: none;
+}
+img {
+  vertical-align: middle;
+    max-height: 650px;
+}
+
+/* Slideshow container */
+.sliderContenedor {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width:412px){
+  .prev, .next {
+    font-size: 1.5rem;
+  }
+  .card-text{
+    font-size:0.9rem;
+  }
+}
+
+.prev:hover{
+  color: hotpink;
+}
+.next:hover{
+  color: hotpink;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* Caption text */
+.text {
+  color: hotpink;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+box-shadow: 0rem -1rem  50px hotpink;
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+
+}
+@media screen and (max-width:797px) {
+  .text{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:487px) {
+  .text{
+    font-size: 1rem;
+  }
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+@media screen and (max-width:487px) {
+  .dot{
+    height: 10px;
+    width: 10px;
+  }
+}
+
+.active, .dot:hover {
+  background-color: hotpink;
+}
+
+/* Fading animation */
+.desvanecido {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+#contenedorPeliculas{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media screen and (max-width:1200px) {
+    #contenedorPeliculas{
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+@media screen and (max-width:583px) {
+  #contenedorPeliculas{
+      grid-template-columns: 50% 50%;
+  }
+}
+.card{
+
+  margin-left: 0.5rem;
+ margin-right: 0.5rem;
+}
+.card-body{
+ margin-bottom: -0.6rem;
+ margin-top: -0.5rem;
+}
+.card:hover{
+    color:hotpink;
+    cursor:context-menu;
+    transform: scale(1.2);
+    z-index:2;
+}
+.footer{
+  width: 100%;
+  background-color: hotpink;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+#p-pie{
+  margin-top: 1rem;
+  color: black;
+  font-size: 1rem;
+} 
+
+@media screen and (max-width:687px) {
+  #p-pie{
+      font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width:340px) {
+  #p-pie{
+      font-size: 0.3rem;
+}
+}
